@@ -1,0 +1,441 @@
+<!-- /*
+* Bootstrap 5
+* Template Name: Khaleef
+* Template Author: Nexnova Technologies
+* Template URI: https://Nexnova Technologies/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Nexnova Technologies">
+ <link rel="shortcut icon" href="images/Khaleef logo.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<link href="css/tiny-slider.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<title>Khaleef Free Bootstrap 5 Template for Khaleefture and Interior Design Websites by Nexnova Technologies </title>
+  <style>
+	/* chatbot */
+
+#chat-container {
+  width: 100%; /* Use percentage for better responsiveness */
+  max-width: 800px; /* Limit maximum width */
+  height: 80vh;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 20px auto; /* Center the chat container */
+}
+
+#chat-box {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+  border-bottom: 1px solid #ddd;
+  height: calc(100% - 70px); /* Adjust height to prevent overflowing */
+}
+
+#chat-log {
+  display: flex;
+  flex-direction: column;
+}
+
+#chat-log .bot-message, #chat-log .user-message {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.bot-message {
+  background-color: #e0f7fa;
+  align-self: flex-start;
+}
+
+.user-message {
+  background-color: #c8e6c9;
+  align-self: flex-end;
+}
+
+#option-buttons {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#option-buttons button {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  background-color: #00796b;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#option-buttons button:hover {
+  background-color: #004d40;
+}
+
+/* Adjust the chat box for smaller screens */
+@media (max-width: 768px) {
+  #chat-container {
+    width: 100%;
+    height: 600px; /* Reduce height for smaller screens */
+  }
+
+  #chat-box {
+    height: calc(100% - 60px); /* Adjust height for small screens */
+  }
+}
+
+
+  </style>
+	</head>
+
+	<body>
+
+		<!-- Start Header/Navigation -->
+		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Khaleef navigation bar">
+
+			<div class="container">
+			<span><img class="navlogo" src="images/Khaleef logo.png" alt=""></span>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsKhaleef" aria-controls="navbarsKhaleef" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarsKhaleef">
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+						<li class="nav-item">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+						<li><a class="nav-link" href="shop.html">Shop</a></li>
+						<li><a class="nav-link" href="about.html">About us</a></li>
+						<li><a class="nav-link" href="services.html">Services</a></li>
+						<li><a class="nav-link" href="contact.html">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+				
+		</nav>
+		<!-- End Header/Navigation -->
+
+		<!-- Start Hero Section -->
+			<div class="hero">
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="col-lg-5">
+							<div class="intro-excerpt">
+								<h1>How can help you</h1>
+								<p class="mb-4">Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+								<p><a href="" class="btn btn-secondary me-2">Explore</a></p>
+								<br>
+								  <br>
+								  <br>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div class="hero-img-wrap">
+								<img src="images/couch.png" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		<!-- End Hero Section -->
+          
+		<div id="chat-container">
+			<div id="chat-box">
+			  <div id="chat-log"></div>
+			</div>
+			<div id="option-buttons"></div>
+		</div>
+
+		  		<!-- Start Testimonial Slider -->
+		<div class="testimonial-section before-footer-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 mx-auto text-center">
+						<h2 class="section-title">Testimonials</h2>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-lg-12">
+						<div class="testimonial-slider-wrap text-center">
+
+							<div id="testimonial-nav">
+								<span class="prev" data-controls="prev"><span class="fa fa-chevron-left"></span></span>
+								<span class="next" data-controls="next"><span class="fa fa-chevron-right"></span></span>
+							</div>
+
+							<div class="testimonial-slider">
+								
+								<div class="item">
+									<div class="row justify-content-center">
+										<div class="col-lg-8 mx-auto">
+
+											<div class="testimonial-block text-center">
+												<blockquote class="mb-5">
+													<p>&ldquo;“From the esteemed House of Allura, 
+A new chapter unfolds for the discerning gentleman. Introducing Khaleef—the premium groom rental and designer studio crafted to elevate your style, sophistication, and charm. Step into the world of refined elegance and experience the art of impeccable grooming with Khaleef." morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+												</blockquote>
+												<div class="author-info">
+													<div class="author-pic">
+														<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+													</div>
+													<h3 class="font-weight-bold">Maria Jones</h3>
+													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+													
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div> 
+								<!-- END item -->
+
+								<div class="item">
+									<div class="row justify-content-center">
+										<div class="col-lg-8 mx-auto">
+
+											<div class="testimonial-block text-center">
+												<blockquote class="mb-5">
+													<p>&ldquo;“From the esteemed House of Allura, 
+A new chapter unfolds for the discerning gentleman. Introducing Khaleef—the premium groom rental and designer studio crafted to elevate your style, sophistication, and charm. Step into the world of refined elegance and experience the art of impeccable grooming with Khaleef." morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+												</blockquote>
+												<div class="author-info">
+													<div class="author-pic">
+														<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+													</div>
+													<h3 class="font-weight-bold">Maria Jones</h3>
+													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+													
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div> 
+								<!-- END item -->
+
+								<div class="item">
+									<div class="row justify-content-center">
+										<div class="col-lg-8 mx-auto">
+
+											<div class="testimonial-block text-center">
+												<blockquote class="mb-5">
+													<p>&ldquo;“From the esteemed House of Allura, 
+A new chapter unfolds for the discerning gentleman. Introducing Khaleef—the premium groom rental and designer studio crafted to elevate your style, sophistication, and charm. Step into the world of refined elegance and experience the art of impeccable grooming with Khaleef." morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+												</blockquote>
+												<div class="author-info">
+													<div class="author-pic">
+														<img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
+													</div>
+													<h3 class="font-weight-bold">Maria Jones</h3>
+													<span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+													
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div> 
+								<!-- END item -->
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Testimonial Slider -->
+
+		
+
+		<!-- Start Footer Section -->
+		<footer class="footer-section">
+			<div class="container relative">				
+				<div class="row g-5 mb-5">
+					<div class="col-lg-4">
+						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo"><span><img class="navlogo" src="/images/Khaleef logo.png" alt=""></span></a></div>
+						<p class="mb-4">“From the esteemed House of Allura, 
+A new chapter unfolds for the discerning gentleman. Introducing Khaleef—the premium groom rental and designer studio crafted to elevate your style, sophistication, and charm. Step into the world of refined elegance and experience the art of impeccable grooming with Khaleef."</p>
+
+						<ul class="list-unstyled custom-social">
+							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+							<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
+							<li><a href="https://www.instagram.com/khaleef_groomstudio?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><span class="fa fa-brands fa-instagram"></span></a></li>
+							<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-8">
+						<h4>Quick Links</h4>
+						<div class="row links-wrap">
+							<div class="col-6 col-sm-6 col-md-3">
+								<div class="footer-links">
+
+									<ul class="list-unstyled">
+									  <li><a href="index.html">Home</a></li>
+									  <li><a href="about.html">About Us</a></li>
+									  <li><a href="services.html">Services</a></li>
+									  <li><a href="contact.html">Contact Us</a></li>
+									</ul>
+								  </div>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="tel:7736401615">Support</a></li>
+									<li><a href="#">Customer Testimonials</a></li>
+									<li><a href="https://maps.app.goo.gl/VyeSUpjsLLtdToEL8">Store Locator</a></li>
+									<li><a href="#">Our Stores</a></li>
+								</ul>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="#">Custom Design Services</a></li>
+									<li><a href="#">Wedding Packages</a></li>
+									<li><a href="#">Book an Appointment</a></li>
+									<li><a href="#">Customer Support</a></li>
+								</ul>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="#">Personal Styling</a></li>
+									<li><a href="#">Our Gallery</a></li>
+									<li><a href="chatbot.html">FAQs</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="border-top copyright">
+					<div class="row pt-4">
+						<div class="col-lg-6">
+							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://Nexnova Technologies">Nexnova Technologies</a> Distributed By <a hreff="https://Nexnova.com">Nexnova</a>  <!-- License information: https://Nexnova Technologies/license/ -->
+            </p>
+						</div>
+
+						<div class="col-lg-6 text-center text-lg-end">
+							<ul class="list-unstyled d-inline-flex ms-auto">
+								<li class="me-4"><a href="termandcondition.html">Terms &amp; Conditions</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</footer>
+		<!-- End Footer Section -->	
+		<a class="whatsapp-icon" href="https://wa.me/+919562870987"target="_blank" style="text-decoration: none;"><i class="fab fa-whatsapp" ></i></a>
+         <script>
+			// script.js
+
+// Predefined FAQ answers and options
+const faqData = {
+  "What can I ask about?": [
+    "Outfit types",
+    "Rental prices",
+    "Customization options",
+    "Booking an appointment",
+    "Return policy"
+	
+  ],
+  "Outfit types": "We offer tuxedos, suits, traditional wear, and accessories.",
+  "Rental prices": "Our rental prices start at ₹5,000. Please check our pricing page for more details.",
+  "Customization options": "We offer various customization options for suits and outfits. Contact us for more details.",
+  "Booking an appointment": "You can book an appointment through our website or call us at our contact number.",
+  "Return policy": "We offer a 7-day return policy for rental items. Please refer to our Returns & Exchanges page for more details."
+};
+
+// Add a bot message to the chat
+function addBotMessage(message) {
+  const chatLog = document.getElementById("chat-log");
+  const botMessage = document.createElement("div");
+  botMessage.classList.add("bot-message");
+  botMessage.textContent = message;
+  chatLog.appendChild(botMessage);
+  autoScroll(); // Ensure the chat scrolls after the bot message
+}
+
+// Add a user message to the chat
+function addUserMessage(message) {
+  const chatLog = document.getElementById("chat-log");
+  const userMessage = document.createElement("div");
+  userMessage.classList.add("user-message");
+  userMessage.textContent = message;
+  chatLog.appendChild(userMessage);
+  autoScroll(); // Ensure the chat scrolls after the user message
+}
+
+// Function to display the options for the user to choose from
+function showOptions(options) {
+  const optionButtons = document.getElementById("option-buttons");
+  optionButtons.innerHTML = ''; // Clear previous options
+  
+  options.forEach(option => {
+    const button = document.createElement("button");
+    button.textContent = option;
+    button.addEventListener("click", () => handleOptionClick(option));
+    optionButtons.appendChild(button);
+  });
+}
+
+// Function to handle the user's choice
+function handleOptionClick(option) {
+  addUserMessage(option); // Add user message
+  const response = faqData[option] || "Sorry, I didn't understand that. Can you choose another option?";
+  addBotMessage(response);
+  
+  // Show more options after a response (if it's the initial question)
+  if (option === "What can I ask about?") {
+    setTimeout(() => {
+      showOptions(faqData[option]);
+    }, 500);
+  }
+}
+
+// Function to scroll the chat to the bottom
+function autoScroll() {
+  const chatLog = document.getElementById("chat-log");
+  chatLog.scrollTop = chatLog.scrollHeight; // Scroll to the bottom of the chat log
+}
+
+// Initial message and options
+function initChat() {
+  addBotMessage("Hello! How can I assist you today?");
+  setTimeout(() => {
+    showOptions(faqData["What can I ask about?"]);
+  }, 500);
+}
+
+initChat();
+
+		 </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/tiny-slider.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+
+</html>
