@@ -84,7 +84,7 @@ document.getElementById("contactForm").addEventListener("submit", function (even
 
     // Construct WhatsApp message
     const whatsappMessage = `Hello, my name is ${fname} ${lname}. Phone: ${number}. Message: ${message}`;
-    const whatsappURL = `https://wa.me/+919562870987?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappURL = `https://wa.me/+919633094987?text=${encodeURIComponent(whatsappMessage)}`;
 
     // // Debugging: Check if URL is formed
     // alert(`Redirecting to: ${whatsappURL}`);
