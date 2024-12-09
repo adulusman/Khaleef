@@ -442,6 +442,31 @@ function initChat() {
     showOptions(faqData["What can I ask about?"]);
   }, 500);
 }
+// Function to ensure the chat box scrolls to the bottom
+function autoScroll() {
+  const chatBox = document.getElementById("chat-box");
+  chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+// Add a bot message to the chat
+function addBotMessage(message) {
+  const chatLog = document.getElementById("chat-log");
+  const botMessage = document.createElement("div");
+  botMessage.classList.add("bot-message");
+  botMessage.textContent = message;
+  chatLog.appendChild(botMessage);
+  autoScroll(); // Ensure the chat scrolls after the bot message
+}
+
+// Add a user message to the chat
+function addUserMessage(message) {
+  const chatLog = document.getElementById("chat-log");
+  const userMessage = document.createElement("div");
+  userMessage.classList.add("user-message");
+  userMessage.textContent = message;
+  chatLog.appendChild(userMessage);
+  autoScroll(); // Ensure the chat scrolls after the user message
+}
 
 initChat();
 
