@@ -98,7 +98,8 @@ a {
         .custom-navbar {
           background: #0b0b27!important;
           padding-top: 20px;
-          padding-bottom: 20px; }
+          /* padding-bottom: 20px; */
+         }
           .custom-navbar .navbar-brand {
             font-size: 32px;
             font-weight: 600; }
@@ -179,7 +180,8 @@ a {
 
 .hero {
   background: #0b0b27;
-  padding: calc(4rem - 30px) 0 0rem 0; }
+  /* padding: calc(4rem - 30px) 0 0rem 0; */
+ }
   @media (min-width: 768px) {
     .hero {
       padding: calc(4rem - 30px) 0 4rem 0; } }
