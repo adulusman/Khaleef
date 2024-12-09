@@ -159,10 +159,23 @@ a {
               margin-right: 0px; }
               .custom-navbar .custom-navbar-cta li:first-child {
                 margin-right: 20px; }
-.navlogo{
-  width:200px;
-  position: relative; 
-}
+                .navlogo {
+                  width: 200px;
+                  position: relative;
+                }
+                
+                @media screen and (max-width: 768px) {
+                  .navlogo {
+                    width: 150px; /* Adjust the width for smaller screens */
+                  }
+                }
+                
+                @media screen and (max-width: 480px) {
+                  .navlogo {
+                    width: 100px; /* Adjust the width for very small screens */
+                  }
+                }
+                
 
 .hero {
   background: #0b0b27;
