@@ -24,8 +24,35 @@
 		<link href="css/tiny-slider.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<title>KHALEEF</title>
+		
+		<style>
+		.spinner-pulse {
+			width: 40px;
+			height: 40px;
+			background-color: #3498db;
+			border-radius: 50%;
+			animation: pulse 1.2s infinite ease-in-out;
+		}
+		
+		@keyframes pulse {
+			0%, 100% {
+				transform: scale(1);
+				opacity: 1;
+			}
+			50% {
+				transform: scale(1.5);
+				opacity: 0.6;
+			}
+		}
+		</style>
+		
+		
+		
 	</head>
 	<body>
+		<div id="loading-spinner">
+			<div class="spinner-pulse"></div>
+		</div>
 
 		<!-- Start Header/Navigation -->
 		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Khaleef navigation bar">
@@ -254,6 +281,88 @@
 			</div>
 		</div>
 		<!-- End We Help Section -->
+		<div class="product-section">
+			<div class="container">
+				<div class="row">
+					<!-- Start Column 2 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item" href="">
+							 <video src="vedios/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" controls class="img-fluid product-thumbnail"></video>
+							<!-- <h3 class="product-title">Consultation </h3> -->
+							<!-- <strong class="product-price">STEP 01</strong> -->
+						</a>
+					</div> 
+					<!-- End Column 2 -->
+
+					<!-- Start Column 3 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item" href="">
+							<video src="vedios/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" controls class="img-fluid product-thumbnail"></video>
+							<!-- <h3 class="product-title">Styling</h3> -->
+							<!-- <strong class="product-price">STEP 02</strong>	 -->
+						</a>
+					</div>
+					<!-- End Column 3 -->
+
+					<!-- Start Column 4 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item" href="">
+							<video src="vedios/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" controls class="img-fluid product-thumbnail"></video>
+							<!-- <h3 class="product-title">Measurement</h3>
+							<strong class="product-price">STEP 03</strong>	 -->
+						</a>
+					</div>
+					<!-- End Column 4 -->
+					 <!-- Start Column empty -->
+					 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item" href="">
+							<video src="vedios/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" controls class="img-fluid product-thumbnail"></video>
+							<!-- <h3 class="product-title">Tailoring</h3>
+							<strong class="product-price">STEP 04</strong> -->
+						</a>
+					</div> 
+					<!-- End Column empty -->
+
+					<!-- Start Column 5 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item" href="">
+							<video src="vedios/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" controls class="img-fluid product-thumbnail"></video>
+							<!-- <h3 class="product-title">Tailoring</h3>
+							<strong class="product-price">STEP 04</strong> -->
+						</a>
+					</div> 
+					<!-- End Column 5 -->
+
+					<!-- Start Column 6 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item" href="">
+							 <video src="vedios/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" controls class="img-fluid product-thumbnail"></video>
+							<!-- <h3 class="product-title">Garment care </h3>
+							<strong class="product-price">STEP 05</strong> -->
+						</a>
+					</div>
+					<!-- End Column 6 -->
+
+					<!-- Start Column 7 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item" href="">
+							<video src="vedios/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" controls class="img-fluid product-thumbnail"></video>
+							<!-- <h3 class="product-title">	Wearing</h3>
+							<strong class="product-price">STEP 06</strong> -->
+						</a>
+					</div>
+					<!-- End Column 7 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
+						<a class="product-item" href="">
+							<video src="vedios/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" controls class="img-fluid product-thumbnail"></video>
+							<!-- <h3 class="product-title">Tailoring</h3>
+							<strong class="product-price">STEP 04</strong>
+						</a> -->
+					</div> 
+				</div>
+			</div>
+		</div>
+		<!-- End Product Section -->
 
 	
 		<!-- Start Testimonial Slider -->
@@ -457,6 +566,11 @@ A new chapter unfolds for the discerning gentleman. Introducing Khaleef—the pr
 		<a class="whatsapp-icon" href="https://wa.me/+919633094987"target="_blank" style="text-decoration: none;"><i class="fab fa-whatsapp" ></i></a>
         <a class="support-icon" href="chatbot.html"target="_blank" style="text-decoration: none;"><i class="fas fa-headset" ></i></a>
  
+		<script>
+			window.addEventListener('load', function () {
+				document.getElementById('loading-spinner').style.display = 'none';
+			});
+		</script>
 		
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
