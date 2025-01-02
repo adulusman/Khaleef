@@ -22,6 +22,36 @@
 		<link href="css/tiny-slider.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<title>KHALEEF</title>
+		<style>
+					/* Style for Video Gallery Section */
+.video-gallery-section {
+    padding: 50px 0;
+}
+
+.video-gallery-section .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.video-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.reels-video {
+    height: 300px; /* Adjust height for a better display */
+    object-fit: contain;
+    border-radius: 10px;
+    width: 100%;
+}
+
+/* Ensure proper spacing between videos */
+.mb-4 {
+    margin-bottom: 30px;
+}
+		</style>
 	</head>
 
 	<body>
@@ -83,12 +113,14 @@
 
 		
 
-		<div class="untree_co-section product-section before-footer-section">
-		    <div class="container">
-				<h1>Products</h1>
-		      	<div class="row">
-					
-
+		<div class="video-gallery-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2 class="section-title mb-5">	Our Product</h2>
+					</div>
+				</div>
+				<div class="row">
 		      		<!-- Start Column 1 -->
 					<div class="col-12 col-md-4 col-lg-3 mb-5">
 						<a class="product-item" href="#">
@@ -96,9 +128,6 @@
 							<!-- <h3 class="product-title">Black Suit</h3>
 							<strong class="product-price">₹1500.00</strong> -->
 
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
 						</a>
 					</div> 
 					<!-- End Column 1 -->
@@ -110,9 +139,6 @@
 							<!-- <h3 class="product-title">Black Suit</h3>
 							<strong class="product-price">₹1500.00</strong> -->
 
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
 						</a>
 					</div> 
 					<!-- End Column 2 -->
@@ -124,9 +150,6 @@
 							<!-- <h3 class="product-title">Kruzo Aero Chair</h3>
 							<strong class="product-price">₹1178.00</strong> -->
 
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
 						</a>
 					</div>
 					<!-- End Column 3 -->
@@ -138,9 +161,6 @@
 							<!-- <h3 class="product-title">Kurta</h3>
 							<strong class="product-price">₹2043.00</strong> -->
 
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
 						</a>
 					</div>
 					<!-- End Column 4 -->
@@ -153,9 +173,6 @@
 							<!-- <h3 class="product-title">Black Suit</h3> -->
 							<!-- <strong class="product-price">₹1500.00</strong> -->
 
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
 						</a>
 					</div> 
 					<!-- End Column 1 -->
@@ -167,9 +184,6 @@
 							<!-- <h3 class="product-title"></h3> -->
 							<!-- <strong class="product-price">Sherwani</strong> -->
 
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
 						</a>
 					</div> 
 					<!-- End Column 2 -->
@@ -181,9 +195,6 @@
 							<!-- <h3 class="product-title">Black Suit</h3> -->
 							<!-- <strong class="product-price">Black Suit</strong> -->
 
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
 						</a>
 					</div>
 					<!-- End Column 3 -->
@@ -195,16 +206,160 @@
 							<!-- <h3 class="product-title">Kurta</h3>
 							<strong class="product-price">₹1043.00</strong> -->
 
-							<span class="icon-cross">
-								<img src="images/cross.svg" class="img-fluid">
-							</span>
 						</a>
 					</div>
 					<!-- End Column 4 -->
 
-		      	</div>
-		    </div>
+				</div>
+			</div>
 		</div>
+
+		<!-- Start Video Section -->
+<div class="video-gallery-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-title mb-5">Video Gallery</h2>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Video 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="video-item">
+                    <video class="d-block w-100 reels-video" controls>
+                        <source src="videos/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <!-- Video 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="video-item">
+                    <video class="d-block w-100 reels-video" controls>
+                        <source src="videos/perinthalmanna_online_267566064.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <!-- Video 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="video-item">
+                    <video class="d-block w-100 reels-video" controls>
+                        <source src="videos/allura_premium_bridal_rentals_99544132.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <!-- Additional videos can be added similarly -->
+        </div>
+    </div>
+</div>
+<!-- End Video Section -->
+
+<!-- Start Video Section -->
+<div class="video-gallery-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-title mb-5">	Our Customer</h2>
+            </div>
+        </div>
+        <div class="row">
+           <!-- Start Column 1 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5">
+						<a class="product-item" href="#">
+							<img src="images/Customer01.jpg" class="img-fluid product-thumbnail">
+							<!-- <h3 class="product-title">Black Suit</h3>
+							<strong class="product-price">₹1500.00</strong> -->
+
+						</a>
+					</div> 
+					<!-- End Column 1 -->
+						
+					<!-- Start Column 2 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5">
+						<a class="product-item" href="#">
+							<img src="images/Customer02.jpg" class="img-fluid product-thumbnail">
+							<!-- <h3 class="product-title">Black Suit</h3>
+							<strong class="product-price">₹1500.00</strong> -->
+
+						</a>
+					</div> 
+					<!-- End Column 2 -->
+
+					<!-- Start Column 3 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5">
+						<a class="product-item" href="#">
+							<img src="images/Customer03.jpg" class="img-fluid product-thumbnail">
+							<!-- <h3 class="product-title">Kruzo Aero Chair</h3>
+							<strong class="product-price">₹1178.00</strong> -->
+
+						</a>
+					</div>
+					<!-- End Column 3 -->
+
+					<!-- Start Column 4 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5">
+						<a class="product-item" href="#">
+							<img src="images/Customer04.jpg" class="img-fluid product-thumbnail">
+							<!-- <h3 class="product-title">Kurta</h3>
+							<strong class="product-price">₹2043.00</strong> -->
+
+						</a>
+					</div>
+					<!-- End Column 4 -->
+
+
+					<!-- Start Column 1 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5">
+						<a class="product-item" href="#">
+							<img src="images/Customer05.jpg" class="img-fluid product-thumbnail">
+							<!-- <h3 class="product-title">Black Suit</h3> -->
+							<!-- <strong class="product-price">₹1500.00</strong> -->
+
+						</a>
+					</div> 
+					<!-- End Column 1 -->
+						
+					<!-- Start Column 2 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5">
+						<a class="product-item" href="#">
+							<img src="images/Customer06.jpg" class="img-fluid product-thumbnail">
+							<!-- <h3 class="product-title"></h3> -->
+							<!-- <strong class="product-price">Sherwani</strong> -->
+
+						</a>
+					</div> 
+					<!-- End Column 2 -->
+
+					<!-- Start Column 3 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5">
+						<a class="product-item" href="#">
+							<img src="images/Customer07.jpg" class="img-fluid product-thumbnail">
+							<!-- <h3 class="product-title">Black Suit</h3> -->
+							<!-- <strong class="product-price">Black Suit</strong> -->
+
+						</a>
+					</div>
+					<!-- End Column 3 -->
+
+					<!-- Start Column 4 -->
+					<div class="col-12 col-md-4 col-lg-3 mb-5">
+						<a class="product-item" href="#">
+							<img src="images/Customer08.jpg" class="img-fluid product-thumbnail">
+							<!-- <h3 class="product-title">Kurta</h3>
+							<strong class="product-price">₹1043.00</strong> -->
+						</a>
+					</div>
+					<!-- End Column 4 -->
+        </div>
+    </div>
+</div>
+<!-- End Video Section -->
+
+
+
+
 
 
 		<!-- Start Footer Section -->
