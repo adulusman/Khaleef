@@ -24,6 +24,29 @@
 		<link href="css/tiny-slider.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<title>KHALEEF</title>	
+		<style>
+		/* Style for Reels Videos */
+.reels-video {
+    height: 600px; /* Adjust height to match vertical video dimensions */
+    object-fit:contain;
+}
+/* Center the carousel control buttons */
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10; /* Ensure controls are above carousel items */
+}
+
+/* Optionally, you can adjust left/right positioning */
+.carousel-control-prev {
+    left: 10px; /* Adjust as needed */
+}
+
+.carousel-control-next {
+    right: 10px; /* Adjust as needed */
+}
+</style>
 	</head>
 	<body>
 		
@@ -259,54 +282,63 @@
 				</div>
 			</div>
 		</div>
-		<!-- End We Help Section -->
-		<div class="product-section">
-			<div class="container">
-				<div class="row">
-					<!-- Start Column 2 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-						<a class="product-item" href="">
-							 <video src="vedios/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" controls class="img-fluid product-thumbnail"></video>
-							<!-- <h3 class="product-title">Consultation </h3> -->
-							<!-- <strong class="product-price">STEP 01</strong> -->
-						</a>
-					</div> 
-					<!-- End Column 2 -->
 
-					<!-- Start Column 3 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-						<a class="product-item" href="">
-							<video src="vedios/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" controls class="img-fluid product-thumbnail"></video>
-							<!-- <h3 class="product-title">Styling</h3> -->
-							<!-- <strong class="product-price">STEP 02</strong>	 -->
-						</a>
-					</div>
-					<!-- End Column 3 -->
+	<!-- Start Video Carousel Section -->
+<div class="video-carousel-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-title mb-5">Reels Videos</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div id="videoCarousel" class="carousel slide">
+                    <!-- Carousel Indicators -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#videoCarousel" da
+						ta-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
 
-					<!-- Start Column 4 -->
-					<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-						<a class="product-item" href="">
-							<video src="vedios/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" controls class="img-fluid product-thumbnail"></video>
-							<!-- <h3 class="product-title">Measurement</h3>
-							<strong class="product-price">STEP 03</strong>	 -->
-						</a>
-					</div>
-					<!-- End Column 4 -->
-					 <!-- Start Column empty -->
-					 <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-						<a class="product-item" href="">
-							<video src="vedios/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" controls class="img-fluid product-thumbnail"></video>
-							<!-- <h3 class="product-title">Tailoring</h3>
-							<strong class="product-price">STEP 04</strong> -->
-						</a>
-					</div> 
-					<!-- End Column empty -->
+                    <!-- Carousel Inner -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <video class="d-block w-100 reels-video" controls>
+                                <source src="videos/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="carousel-item">
+                            <video class="d-block w-100 reels-video" controls>
+                                <source src="videos/allura_premium_bridal_rentals_99544132.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="carousel-item">
+                            <video class="d-block w-100 reels-video" controls>
+                                <source src="videos/perinthalmanna_online_267566064.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
 
-					
-				</div>
-			</div>
-		</div>
-		<!-- End Product Section -->
+                    <!-- Carousel Controls -->
+                    <button class="carousel-control-prev " type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Video Carousel Section -->
 
 	
 		<!-- Start Testimonial Slider -->
@@ -477,7 +509,7 @@ A new chapter unfolds for the discerning gentleman. Introducing Khaleef—the pr
 
 							<div class="col-6 col-sm-6 col-md-3">
 								<ul class="list-unstyled">
-									<li><a href="#">Personal Styling</a></li>
+									<li><a href="checkout.html">Personal Styling</a></li>
 									<li><a href="shop.html">Our Shop</a></li>
 									<li><a href="chatbot.html">FAQs</a></li>
 								</ul>

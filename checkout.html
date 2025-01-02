@@ -22,6 +22,50 @@
 		<link href="css/tiny-slider.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<title>KHALEEF</title>
+		<style>
+		
+			.carousel {
+			  width: 100%;
+			  overflow: hidden;
+			  position: relative;
+			}
+		
+			.carousel-track {
+			  display: flex;
+			  transition: transform 0.5s ease-in-out;
+			}
+		
+			.carousel-item {
+			  min-width: 100%;
+			  flex-shrink: 0;
+			  position: relative;
+			}
+		
+			.carousel-item video {
+			  width: 100%;
+			  height: auto;
+			}
+		
+			.carousel-button {
+			  position: absolute;
+			  top: 50%;
+			  transform: translateY(-50%);
+			  background: rgba(0, 0, 0, 0.5);
+			  color: #fff;
+			  border: none;
+			  padding: 10px;
+			  cursor: pointer;
+			  z-index: 1000;
+			}
+		
+			.carousel-button.prev {
+			  left: 10px;
+			}
+		
+			.carousel-button.next {
+			  right: 10px;
+			}
+		  </style>
 	</head>
 
 	<body>
@@ -80,6 +124,21 @@
 				</div>
 			</div>
 		<!-- End Hero Section -->
+		<div class="carousel">
+			<button class="carousel-button prev" onclick="prevSlide()">&#8249;</button>
+			<div class="carousel-track">
+			  <div class="carousel-item">
+				<video src="vedios/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" controls></video>
+			  </div>
+			  <div class="carousel-item">
+				<video src="vedios/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" controls></video>
+			  </div>
+			  <div class="carousel-item">
+				<video src="vedios/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" controls></video>
+			  </div>
+			</div>
+			<button class="carousel-button next" onclick="nextSlide()">&#8250;</button>
+	   </div>
 
 		<div class="untree_co-section">
 		    <div class="container">
@@ -435,6 +494,28 @@ A new chapter unfolds for the discerning gentleman. Introducing Khaleef—the pr
 				document.getElementById('loading-spinner').style.display = 'none';
 			});
 		</script>
+		 <script>
+			const track = document.querySelector('.carousel-track');
+			const items = document.querySelectorAll('.carousel-item');
+			let currentIndex = 0;
+		
+			function updateCarousel() {
+			  const width = items[0].getBoundingClientRect().width;
+			  track.style.transform = `translateX(-${currentIndex * width}px)`;
+			}
+		
+			function prevSlide() {
+			  currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
+			  updateCarousel();
+			}
+		
+			function nextSlide() {
+			  currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
+			  updateCarousel();
+			}
+		
+			window.addEventListener('resize', updateCarousel);
+		  </script>
 
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
