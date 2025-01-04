@@ -284,60 +284,59 @@
 		</div>
 
 	<!-- Start Video Carousel Section -->
-<div class="video-carousel-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-title mb-5">Reels Videos</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div id="videoCarousel" class="carousel slide">
-                    <!-- Carousel Indicators -->
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#videoCarousel" da
-						ta-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-
-                    <!-- Carousel Inner -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <video class="d-block w-100 reels-video" controls>
-                                <source src="videos/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div class="carousel-item">
-                            <video class="d-block w-100 reels-video" controls>
-                                <source src="videos/allura_premium_bridal_rentals_99544132.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                        <div class="carousel-item">
-                            <video class="d-block w-100 reels-video" controls>
-                                <source src="videos/perinthalmanna_online_267566064.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    </div>
-
-                    <!-- Carousel Controls -->
-                    <button class="carousel-control-prev " type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+	<div class="video-carousel-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="section-title mb-5">Reels Videos</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div id="videoCarousel" class="carousel slide">
+						<!-- Carousel Indicators -->
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						</div>
+	
+						<!-- Carousel Inner -->
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<video class="d-block w-100 reels-video" controls>
+									<source src="videos/WhatsApp Video 2024-12-12 at 5.20.03 PM.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+							<div class="carousel-item">
+								<video class="d-block w-100 reels-video" controls>
+									<source src="videos/allura_premium_bridal_rentals_99544132.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+							<div class="carousel-item">
+								<video class="d-block w-100 reels-video" controls>
+									<source src="videos/perinthalmanna_online_267566064.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+						</div>
+	
+						<!-- Carousel Controls -->
+						<button class="carousel-control-prev " type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 <!-- End Video Carousel Section -->
 
 	
@@ -545,6 +544,30 @@ A new chapter unfolds for the discerning gentleman. Introducing Khaleef—the pr
 		<script>
 			window.addEventListener('load', function () {
 				document.getElementById('loading-spinner').style.display = 'none';
+			});
+		</script>
+		<script>
+			// Select the carousel
+			const videoCarousel = document.getElementById("videoCarousel");
+		
+			// Add an event listener for the 'slide.bs.carousel' event
+			videoCarousel.addEventListener("slide.bs.carousel", () => {
+				// Pause all videos in the carousel
+				const videos = videoCarousel.querySelectorAll("video");
+				videos.forEach((video) => {
+					video.pause();
+					video.currentTime = 0; // Optional: Reset the video to the beginning
+				});
+			});
+		
+			// Optional: Pause videos when the carousel is hidden or out of view
+			document.addEventListener("visibilitychange", () => {
+				if (document.hidden) {
+					const videos = videoCarousel.querySelectorAll("video");
+					videos.forEach((video) => {
+						video.pause();
+					});
+				}
 			});
 		</script>
 		
