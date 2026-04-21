@@ -41,6 +41,8 @@
 	<!-- Stylesheets -->
 	<link rel="preconnect" href="https://cdnjs.cloudflare.com">
 	<link rel="preconnect" href="https://cdn.jsdelivr.net">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="preload" as="image" href="images/couch.png" fetchpriority="high">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"
@@ -81,6 +83,15 @@
 			object-fit: contain;
 		}
 
+		.hero .hero-img-wrap {
+			min-height: clamp(280px, 42vw, 520px);
+		}
+
+		.hero .hero-img-wrap img {
+			width: 100%;
+			height: auto;
+		}
+
 		/* Center the carousel control buttons */
 		.carousel-control-prev,
 		.carousel-control-next {
@@ -118,7 +129,7 @@
 	<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Khaleef navigation bar">
 
 		<div class="container">
-			<span><img class="navlogo" src="images/logo01.svg"
+			<span><img class="navlogo" src="images/logo01.svg" width="200" height="56"
 					alt="Khaleef Groom Studio - Premium Groom Rentals in Kerala"></span>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsKhaleef"
 				aria-controls="navbarsKhaleef" aria-expanded="false" aria-label="Toggle navigation">
@@ -157,7 +168,7 @@
 				<div class="col-lg-7">
 					<div class="hero-img-wrap">
 						<img src="images/couch.png" alt="Top 5 Groom Suit Trends in Kerala for 2025." class="img-fluid"
-							fetchpriority="high" decoding="async">
+							width="900" height="650" fetchpriority="high" decoding="async">
 					</div>
 				</div>
 			</div>
@@ -183,7 +194,8 @@
 				<!-- Start Column 2 -->
 				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
 					<a class="product-item" href="">
-						<img src="images/consulting.png" class="img-fluid product-thumbnail" loading="lazy"
+						<img src="images/consulting.png" class="img-fluid product-thumbnail" loading="lazy" width="450"
+							height="450"
 							decoding="async">
 						<h3 class="product-title">Consultation </h3>
 						<strong class="product-price">STEP 01</strong>
@@ -194,7 +206,7 @@
 				<!-- Start Column 3 -->
 				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
 					<a class="product-item" href="">
-						<img src="images/Styling.jpg " class="img-fluid product-thumbnail" loading="lazy"
+						<img src="images/Styling.jpg " class="img-fluid product-thumbnail" loading="lazy" width="450" height="450"
 							decoding="async">
 						<h3 class="product-title">Styling</h3>
 						<strong class="product-price">STEP 02</strong>
@@ -205,7 +217,8 @@
 				<!-- Start Column 4 -->
 				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
 					<a class="product-item" href="">
-						<img src="images/Taking measure.jpg" class="img-fluid product-thumbnail" loading="lazy"
+						<img src="images/Taking measure.jpg" class="img-fluid product-thumbnail" loading="lazy" width="450"
+							height="450"
 							decoding="async">
 						<h3 class="product-title">Measurement</h3>
 						<strong class="product-price">STEP 03</strong>
@@ -221,7 +234,8 @@
 				<!-- Start Column 5 -->
 				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
 					<a class="product-item" href="">
-						<img src="images/Tailoring.png" class="img-fluid product-thumbnail" loading="lazy"
+						<img src="images/Tailoring.png" class="img-fluid product-thumbnail" loading="lazy" width="450"
+							height="450"
 							decoding="async">
 						<h3 class="product-title">Tailoring</h3>
 						<strong class="product-price">STEP 04</strong>
@@ -232,7 +246,8 @@
 				<!-- Start Column 6 -->
 				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
 					<a class="product-item" href="">
-						<img src="images/Garment care.png" class="img-fluid product-thumbnail" loading="lazy"
+						<img src="images/Garment care.png" class="img-fluid product-thumbnail" loading="lazy" width="450"
+							height="450"
 							decoding="async">
 						<h3 class="product-title">Garment care </h3>
 						<strong class="product-price">STEP 05</strong>
@@ -243,7 +258,8 @@
 				<!-- Start Column 7 -->
 				<div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
 					<a class="product-item" href="">
-						<img src="images/Delivery.png" class="img-fluid product-thumbnail" loading="lazy"
+						<img src="images/Delivery.png" class="img-fluid product-thumbnail" loading="lazy" width="450"
+							height="450"
 							decoding="async">
 						<h3 class="product-title"> Wearing</h3>
 						<strong class="product-price">STEP 06</strong>
@@ -279,7 +295,8 @@
 						<div class="col-6 col-md-6">
 							<div class="feature">
 								<div class="icon">
-									<img style="width: 50px;" src="images/10462994.png" alt="Image" class="imf-fluid">
+									<img style="width: 50px;" src="images/10462994.png" width="50" height="50" alt="Image"
+										class="imf-fluid">
 								</div>
 								<h3> Exclusive Collections</h3>
 								<p>We offer a curated range of high-end sherwani, tuxedo, and traditional outfits
@@ -290,7 +307,7 @@
 						<div class="col-6 col-md-6">
 							<div class="feature">
 								<div class="icon">
-									<img style="width: 50px;" src="images/tailer icon.png" alt="Image"
+									<img style="width: 50px;" src="images/tailer icon.png" width="50" height="50" alt="Image"
 										class="imf-fluid">
 								</div>
 								<h3>Tailored Fit</h3>
@@ -301,7 +318,8 @@
 						<div class="col-6 col-md-6">
 							<div class="feature">
 								<div class="icon">
-									<img style="width: 50px;" src="images/affordable.png" alt="Image" class="imf-fluid">
+									<img style="width: 50px;" src="images/affordable.png" width="50" height="50" alt="Image"
+										class="imf-fluid">
 								</div>
 								<h3>Affordable Luxury</h3>
 								<p>Designer outfits at a fraction of the cost through rentals.</p>
@@ -311,7 +329,8 @@
 						<div class="col-6 col-md-6">
 							<div class="feature">
 								<div class="icon">
-									<img style="width: 50px;" src="images/experience.png" alt="Image" class="imf-fluid">
+									<img style="width: 50px;" src="images/experience.png" width="50" height="50" alt="Image"
+										class="imf-fluid">
 								</div>
 								<h3>Premium Experience</h3>
 								<p>Kerala’s studio with exceptional service.</p>
@@ -323,7 +342,8 @@
 
 				<div class="col-lg-5">
 					<div class="img-wrap">
-						<img src="images/why-choose-us-img.jpg" alt="Khaleef Groom Studio services in Kerala"
+						<img src="images/why-choose-us-img.jpg" alt="Khaleef Groom Studio services in Kerala" width="800"
+							height="1000"
 							class="img-fluid" loading="lazy" decoding="async">
 					</div>
 				</div>
@@ -340,10 +360,13 @@
 				<div class="col-lg-7 mb-5 mb-lg-0">
 					<div class="imgs-grid">
 						<div class="grid grid-1"><img src="images/img-grid-1.jpg" alt="Designer groom suit styling"
+								width="1000" height="1000"
 								loading="lazy" decoding="async"></div>
 						<div class="grid grid-2"><img src="images/img-grid-2.jpg"
-								alt="Wedding tuxedo fitting in Perinthalmanna" loading="lazy" decoding="async"></div>
+								alt="Wedding tuxedo fitting in Perinthalmanna" width="900" height="450" loading="lazy"
+								decoding="async"></div>
 						<div class="grid grid-3"><img src="images/img-grid-3.jpg" alt="Premium groom rentals in Kerala"
+								width="900" height="1000"
 								loading="lazy" decoding="async"></div>
 					</div>
 				</div>
