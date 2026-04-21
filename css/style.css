@@ -9,19 +9,35 @@ html, body {
   overflow-x: hidden;
 }
 
+#loading-spinner {
+  position: fixed;
+  inset: 0;
+  background: rgba(11, 11, 39, 0.96);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.25s ease;
+}
+
+#loading-spinner.loader-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .spinner-dots {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .spinner-dots div {
-  width: 15px;
-  height: 15px;
-  background-color: #3498db;
+  width: 12px;
+  height: 12px;
+  background-color: #ceb69d;
   border-radius: 50%;
-  animation: bounce 1.4s infinite ease-in-out;
+  animation: bounce 0.9s infinite ease-in-out;
 }
 
 .spinner-dots div:nth-child(1) {
@@ -36,10 +52,16 @@ html, body {
 
 @keyframes bounce {
   0%, 80%, 100% {
-    transform: scale(0);
+    transform: scale(0.35);
   }
   40% {
     transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner-dots div {
+    animation: none;
   }
 }
 
@@ -785,7 +807,20 @@ a {
     text-align: center;
     background: #cab28e;
     margin-right: 20px;
-    color: #ffffff; }
+    /* Dark icon on tan for readable contrast (white on #cab28e was too faint) */
+    color: #0b0b27; }
+  .service .service-icon > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+    text-decoration: none; }
+  .service .service-icon svg {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0; }
 
 textarea {
   height: auto !important; }
